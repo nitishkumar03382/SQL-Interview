@@ -8,6 +8,7 @@
 | platform    | enum    |
 | amount      | int     |
 +-------------+---------+
+
 The table logs the spendings history of users that make purchases from an online shopping website which has a desktop and a mobile application.
 (user_id, spend_date, platform) is the primary key of this table.
 The platform column is an ENUM type of ('desktop', 'mobile').
@@ -17,6 +18,7 @@ Write an  SQL query to find the total number of users and the total amount spent
 The query result format is in the following example:
 
 Spending table:
+
 +---------+------------+----------+--------+
 | user_id | spend_date | platform | amount |
 +---------+------------+----------+--------+
@@ -29,6 +31,7 @@ Spending table:
 +---------+------------+----------+--------+
 
 Result table:
+
 +------------+----------+--------------+-------------+
 | spend_date | platform | total_amount | total_users |
 +------------+----------+--------------+-------------+
@@ -39,5 +42,6 @@ Result table:
 | 2019-07-02 | mobile   | 100          | 1           |
 | 2019-07-02 | both     | 0            | 0           |
 +------------+----------+--------------+-------------+
+
 On 2019-07-01, user 1 purchased using both desktop and mobile, user 2 purchased using mobile only and user 3 purchased using desktop only.
 On 2019-07-02, user 2 purchased using mobile only, user 3 purchased using desktop only and no one purchased using both platforms.
